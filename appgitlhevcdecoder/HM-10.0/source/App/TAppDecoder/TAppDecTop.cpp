@@ -180,7 +180,7 @@ Void TAppDecTop::decode()
 
         m_cTVideoIOYuvReconFile.open( m_pchReconFile, true, m_outputBitDepthY, m_outputBitDepthC, g_bitDepthY, g_bitDepthC ); // write mode
 #if ENABLE_ANAYSIS_OUTPUT
-		m_cTVideoIOYuvResiFile.open( "resi_yuv.yuv", true, 16, 16, 16, 16 ); // residual yuv file (16bit ***8bit-8bit = 16bit**)
+        m_cTVideoIOYuvResiFile.open( "resi_yuv.yuv", true, 16, 16, 16, 16 ); // residual yuv file (16bit ***8bit-8bit = 16bit**)
 #endif
         recon_opened = true;
       }

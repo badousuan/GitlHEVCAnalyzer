@@ -149,7 +149,7 @@ static void scalePlane(Pel* img, unsigned int stride, unsigned int width, unsign
  * \param fileBitDepth     bit-depth of input/output file data.
  * \param internalBitDepth bit-depth to scale image data to/from when reading/writing.
  */
-Void TVideoIOYuv::open( char* pchFile, Bool bWriteMode, unsigned int fileBitDepth, unsigned int internalBitDepth )
+Void TVideoIOYuv::open(const char* pchFile, Bool bWriteMode, unsigned int fileBitDepth, unsigned int internalBitDepth )
 {
   m_bitdepthShift = internalBitDepth - fileBitDepth;
   m_fileBitdepth = fileBitDepth;

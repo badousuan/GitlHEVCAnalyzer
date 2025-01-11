@@ -163,6 +163,7 @@ Void TAppDecTop::decode()
       }
     }
 
+
     if( pcListPic )
     {
       if ( m_pchReconFile && !recon_opened )

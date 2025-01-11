@@ -62,7 +62,7 @@ public:
   TVideoIOYuv()           {}
   virtual ~TVideoIOYuv()  {}
   
-  Void  open  ( char* pchFile, Bool bWriteMode, unsigned int fileBitDepth, unsigned int internalBitDepth ); ///< open or create file
+  Void  open  (const char* pchFile, Bool bWriteMode, unsigned int fileBitDepth, unsigned int internalBitDepth ); ///< open or create file
   Void  close ();                                           ///< close file
 
   void skipFrames(unsigned int numFrames, unsigned int width, unsigned int height);
